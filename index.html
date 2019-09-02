@@ -22,22 +22,34 @@
     </div>
     <div class="container">
         <div class="buttons">
-            <button class="btn_blue__active" id="all">Всё расписание</button>
-            <button class="btn_blue" id="chet">четная неделя</button>
-            <button class="btn_blue" id="nechet">нечетная неделя</button>
+            <button class="btn_blue__active" id="all">Всё расписание</button>
+            <button class="btn_blue" id="chet">чётная</button>
+            <button class="btn_blue" id="nechet">нечётная</button>
+        </div>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="#пн">пн</a></li>
+                    <li><a href="#вт">вт</a></li>
+                    <li><a href="#ср">ср</a></li>
+                    <li><a href="#чт">чт</a></li>
+                    <li><a href="#пт">пт</a></li>
+                    <li><a href="#сб">сб</a></li>
+                </ul>
+            </nav>
         </div>
 
 
         <section class="chet">
             <div class="chet-rects">
                 <div class="chet-rects-block">
-                    <div class="chet-rects-block-day">
+                    <div class="chet-rects-block-day" id="пн">
                         <h2>Понедельник</h2>
                     </div>
                     <h3>Занятий нет</h3>
                 </div>
                 <div class="chet-rects-block">
-                    <div class="chet-rects-block-day">
+                    <div class="chet-rects-block-day" id="вт">
                         <h2>Вторник</h2>
                     </div>
                     <div class="chet-rects-block-lessons">
@@ -116,7 +128,7 @@
                     </div>
                 </div>
                 <div class="chet-rects-block">
-                    <div class="chet-rects-block-day">
+                    <div class="chet-rects-block-day" id="ср">
                         <h2>Среда</h2>
                     </div>
                     <div class="chet-rects-block-lessons">
@@ -167,7 +179,7 @@
 
 
                 <div class="chet-rects-block">
-                    <div class="chet-rects-block-day">
+                    <div class="chet-rects-block-day" id="чт">
                         <h2>Четверг</h2>
                     </div>
                     <div class="chet-rects-block-lessons">
@@ -231,7 +243,7 @@
                     </div>
                 </div>
                 <div class="chet-rects-block">
-                    <div class="chet-rects-block-day">
+                    <div class="chet-rects-block-day" id="пт">
                         <h2>Пятница</h2>
                     </div>
                     <div class="chet-rects-block-lessons">
@@ -280,7 +292,7 @@
                     </div>
                 </div>
                 <div class="chet-rects-block">
-                    <div class="chet-rects-block-day">
+                    <div class="chet-rects-block-day" id="сб">
                         <h2>Суббота</h2>
                     </div>
                     <h3>Занятий нет</h3>

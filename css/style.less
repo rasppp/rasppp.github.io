@@ -64,6 +64,30 @@
     display: flex;
 }
 
+// menu 
+// menu 
+.menu {
+    display: block;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+
+    ul {
+        display: flex;
+
+        li {
+            list-style: none;
+            margin-right: 3rem;
+
+            a {
+                text-decoration: none;
+                font-size: 2rem;
+                color: #000;
+            }
+        }
+    }
+}
+
 .date {
     text-align: right;
     font-size: 1.6rem;
@@ -73,7 +97,7 @@
     text-align: center;
 
     h1 {
-        font-size: 1.8rem;
+        font-size: 2.2rem;
     }
 }
 
@@ -126,11 +150,21 @@ h3 {
                     display: flex;
                     font-size: 100%;
                     border-bottom: 1px solid silver;
+                    transition: background 0.3s;
+
+                    &:hover {
+                        background-color: #abb;
+                    }
 
                     &-bottom {
                         display: flex;
                         font-size: 100%;
                         border-bottom: none;
+                        transition: background 0.3s;
+
+                        &:hover {
+                            background-color: #abb;
+                        }
                     }
 
                     &-time {
@@ -171,4 +205,15 @@ h3 {
     .date {
         text-align: center;
     }
+
+    .buttons {
+        justify-content: center;
+    }
+}
+
+@media(min-width: 700px) {
+    .menu {
+        display: none;
+    }
+
 }
